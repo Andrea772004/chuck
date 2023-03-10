@@ -7,3 +7,11 @@
     border-radius: 10 px;
     margin: 10px 
 }
+
+.Button.disabled{
+    background-color: #2DC2BD; opacity: 0.6;
+}
+
+.Button:hover{
+    background-color: orangered;
+}
