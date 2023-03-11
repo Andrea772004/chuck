@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './styles/App.css'
-import  './componets/Titolo'
-import Button from './componets/Button'
+import './styles/Titolo.css'
+import  './componets/Titolo.jsx'
+import Button from './componets/Button.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,9 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Webapp API Chuck Norris</h1>
-      <p>Una pagina che sfrutta Api di Chuck Norris per generare un testo</p>
-
+      <Titolo />
       <Button text='Carica il joke' callback={loadJokeCallback}/>
       <Button text='Copia' variant={ joke == "" ? "disabled" : undefined}callback={copyTextCallback}/>
     </div>
