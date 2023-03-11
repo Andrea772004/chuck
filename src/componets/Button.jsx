@@ -7,6 +7,7 @@ function Button({text,variant,callback}) {
   const [count, setCount] = useState(0)
   let clickHandler = function(e){
     console.log(e)
+    callback()
   }
 
   let classRenderer = function (){
