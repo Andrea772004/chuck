@@ -6,8 +6,9 @@ import  './Titolo'
 function Button({text,variant,callback}) {
   const [count, setCount] = useState(0)
   let clickHandler = function(e){
-    console.log(e)
-    callback()
+    if(callback!==undefined && variant!=="disabled"){
+      callback();
+    }
   }
 
   let classRenderer = function (){
