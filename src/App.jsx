@@ -4,6 +4,7 @@ import './styles/Titolo.css'
 import Titolo from './componets/Titolo.jsx'
 import Button from './componets/Button.jsx'
 import Dropdown from './componets/Dropdown.jsx'
+import Paragrafo from './componets/Paragrafo.jsx'
 
 
 function App() {
@@ -21,8 +22,16 @@ function App() {
     })
 
   let loadJokeCallback = function (){
-    console.log ("ciao")
-    setJoke("testo joke")
+    let category = document.getElementById("jokeCategory").value
+    let url2 = "https://api.chucknorris.io/jokes/random" + (category!=="random" ? "?category=" + category : "")
+
+    fetch(url2).then((resp)=>{
+      return resp.json()
+    }).then(data=>{
+      setJoke(data.value)
+    }).catch((e)=>{
+      console.log(e)
+    })
   }
   
   let copyTextCallback = function (){
@@ -32,8 +41,9 @@ function App() {
   return (
     <div className="App">
       <Titolo />
-      <Button text='Carica il joke' callback={loadJokeCallback}/>
-      <Dropdown data={categories}></Dropdown>
+      <Paragrafo text={joke}/>
+      <Button text='Carica il joke'  callback={loadJokeCallback}/>
+      <Dropdown data={categories} id="jokeCategory"></Dropdown>
       <Button text='Copia' variant={ joke == "" ? "disabled" : undefined}callback={copyTextCallback}/>
     </div>
   )
