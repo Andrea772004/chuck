@@ -1,0 +1,11 @@
+:root{
+    background-color: #C6D4FF;
+    line-height: 2.5;
+}
+
+.body{
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh   ;
+}

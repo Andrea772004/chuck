@@ -1,16 +1,13 @@
 .Titolo{
-width: 1028px;
-height: 275px;
-left: 298px;
-top: 43px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 120%;
-
-text-align: center;
-
-color: #000000;
+    width: 1028px;
+    height: 275px;
+    left: 298px;
+    top: 43px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
 }
