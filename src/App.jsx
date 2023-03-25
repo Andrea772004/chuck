@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <Titolo />
+      <Titolo></Titolo>
       <Paragrafo text={joke}/>
       <Button text='Carica il joke'  callback={loadJokeCallback}/>
       <Dropdown data={categories} id="jokeCategory"></Dropdown>

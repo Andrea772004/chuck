@@ -4,7 +4,7 @@ import '../styles/Paragrafo.css'
 function Paragrafo({text}) {
 
   return (
-    <div className="Paragrafo">
+    <div className="Paragrafo" >
       <p>Una pagina che sfrutta Api di Chuck Norris per generare un testo</p>
       <p>{text}</p>
     </div>
