@@ -4,12 +4,16 @@
     max-width: 200px;
     line-height: 35px;
     background-color: #2DC2BD;
-    border-radius: 10 px;
-    margin: 10px 
+    border-radius: 5px;
+    padding: 5px 5px;
+    border: solid 2px black;
+    font: 'inter', 'normnal' ;
+    
 }
 
 .Button.disabled{
     background-color: #2DC2BD; opacity: 0.6;
+
 }
 
 .Button:hover{

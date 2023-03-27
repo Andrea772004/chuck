@@ -39,7 +39,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" align="center">
       <Titolo></Titolo>
       <Paragrafo text={joke}/>
       <Button text='Carica il joke'  callback={loadJokeCallback}/>
